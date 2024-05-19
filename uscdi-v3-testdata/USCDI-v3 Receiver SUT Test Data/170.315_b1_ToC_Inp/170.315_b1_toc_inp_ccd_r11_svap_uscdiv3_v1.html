@@ -1,0 +1,1402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do NOT edit this HTML directly: it was generated via an XSLT transformation from a CDA Release 2 or 3 XML document. -->
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <title>Community Health and Hospitals: Health Summary (September 12, 2012, 00AM -0000)</title>
+      <!-- General CSS -->
+      <style type="text/css" media="all">
+                    *{
+                        font-family: Verdana, Tahoma, sans-serif;
+                        font-size: 9pt;
+                    }
+                    body{
+                        padding: 2px;
+                        color: #003366;
+                        background-color: white;
+                        font-size: 9pt;
+                    }
+                    #documentheader,
+                    #documentbody,
+                    #documentfooter{
+                        width: 100%;
+                    }
+                    #documentheader{
+                        border-bottom: 1px solid grey;
+                        margin-bottom: 1em;
+                    }
+                    #documentfooter{
+                        border-top: 1px solid grey;
+                        margin-top: 1em;
+                    }
+                    a{
+                        color: #003366;
+                        background-color: white;
+                    }
+                    h1{
+                        font-size: 12pt;
+                        font-weight: bold;
+                    }
+                    h1.title{
+                        text-align: center;
+                    }
+                    h2{
+                        font-size: 11pt;
+                        font-weight: bold;
+                    }
+                    h3{
+                        font-size: 10pt;
+                        font-weight: bold;
+                    }
+                    h4{
+                        font-size: 9pt;
+                        font-weight: bold;
+                    }
+                    h5{
+                        font-size: 9pt;
+                        font-weight: bold;
+                    }
+                    h6{
+                        font-size: 9pt;
+                        font-weight: bold;
+                    }
+                    hr{
+                        width: 100%;
+                    }
+                    span {
+                        font-size: 9pt; /* IE8 hack: doesn't understand inheritance */
+                        display: inline; /* IE8 hack: would go to next line otherwise */
+                    }
+                    table{
+                        line-height: 10pt;
+                        width: 100%;
+                    }
+                    thead tr, th{
+                        background-color: LightGrey;
+                    }
+                    tbody tr{
+                        background-color: #f2f2f2;
+                    }
+                    td{
+                        font-size: 9pt; /* IE8 hack: doesn't understand inheritance */
+                        padding: 0.1cm 0.2cm;
+                        vertical-align: top;
+                    }
+                    .table_simple{
+                        width: auto;
+                        color: inherit;
+                        background-color: inherit;
+                    }
+                    .table_simple td{
+                        padding: 0;
+                    }
+                    .table_simple td.td_label{
+                        font-size: 9pt; /* IE8 hack: doesn't understand inheritance */
+                        font-weight: inherit;
+                        font-style: italic;
+                        padding-right: 0.2cm;
+                    }
+                    .has_provenance td,
+                    .has_provenance:not(:empty):not(table),
+                    .has_provenance:focus:after {
+                        text-decoration: underline grey dashed;
+                        text-decoration-thickness: 0.01em;
+                    }
+                    .has_provenance:focus:after {
+                            content: attr(title);
+                            white-space: break-spaces;
+                            padding: 2px;
+                            display: block;
+                            position: relative;
+                            text-align: left;
+                            background-color: #fef4c5;
+                            border: 1px solid #d4b943;
+                            border-radius: 2px;
+                            font-weight: normal;
+                            color: black;
+                            font-size: 10pt;
+                            line-height: 12pt;
+                            width: fit-content;
+                    }
+                    tr.has_provenance:focus:after {
+                           width: max-content;
+                    }
+                    
+                    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                        .has_provenance td,
+                        .has_provenance:not(:empty):not(table),
+                        .has_provenance:focus:after {
+                            text-decoration: underline;
+                        }
+                        .has_provenance:focus:after {
+                            white-space: pre;
+                            display: table;
+                            width: auto;
+                        }
+                    }
+                    .header_table{
+                        border: 1pt solid #00008b;
+                    }
+                    .narr_table{
+                        width: 100%;
+                        margin: 0.3em 0;
+                    }
+                    .narr_tr{
+                        //background-color: #ffffcc;
+                    }
+                    .narr_th{
+                        background-color: LightGrey;
+                        font-size: 9pt; /* IE8 hack: doesn't understand inheritance */
+                    }
+                    .narr_footnote{
+                        font-size: 8pt;
+                        font-style: italic;
+                    }
+                    .td_label{
+                        font-size: 9pt; /* IE8 hack: doesn't understand inheritance */
+                        font-weight: bold;
+                        background-color: LightGrey;
+                    }
+                    .td_label_width{
+                        width: 20%;
+                    }
+                    .span_label{
+                        font-size: 9pt; /* IE8 hack: doesn't understand inheritance */
+                        font-weight: bold;
+                    }
+                    .span_value{
+                        font-size: 9pt; /* IE8 hack: doesn't understand inheritance */
+                        font-weight: normal;
+                    }
+                    .revision_insert{
+                        text-decoration: underline overline;
+                    }
+                    .revision_insert_final{
+                    }
+                    .revision_delete{
+                        text-decoration: line-through;
+                    }
+                    .revision_delete_final{
+                        display: none;
+                    }
+                    .span_button {
+                        display: table-cell;
+                        cursor: pointer;
+                        border: 2pt inset #585858;
+                        border-radius: 15px;
+                        -moz-border-radius: 15px;
+                        padding: 0.1cm 0.2cm;
+                        background-color: #f2f2f2;
+                        font-weight: bold;
+                        vertical-align: baseline;
+                        width: 150px;
+                    }
+                    div.separator {
+                        height: 1em;
+                    }
+                    div.caption {
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                </style>
+      <!-- Stylecode CSS -->
+      <style type="text/css" media="all">
+                    .Bold{
+                        font-weight: bold;
+                    }
+                    .Italics{
+                        font-style: italic;
+                    }
+                    .Underline{
+                        text-decoration: underline;
+                    }
+                    .Emphasis{
+                        font-weight: bold;
+                        font-style: italic;
+                    }
+                    .Lrule{
+                        border-left-width: 2px;
+                        border-left-style: solid;
+                    }
+                    .Rrule{
+                        border-right-width: 2px;
+                        border-right-style: solid;
+                    }
+                    .Toprule{
+                        border-top-width: 2px;
+                        border-top-style: solid;
+                    }
+                    .Botrule{
+                        border-bottom-width: 2px;
+                        border-bottom-style: solid;
+                    }
+                    .Arabic{
+                        list-style: arabic;
+                    }
+                    .LittleRoman{
+                        list-style: lower-roman;
+                    }
+                    .BigRoman{
+                        list-style: upper-roman;
+                    }
+                    .LittleAlpha{
+                        list-style: lower-alpha;
+                    }
+                    .BigAlpha{
+                        list-style: upper-alpha
+                    }
+                    .Disc{
+                        list-style: disc;
+                    }
+                    .Circle{
+                        list-style: circle;
+                    }
+                    .Square{
+                        list-style: square;
+                    }</style>
+      <!-- Section Button Toggle CSS -->
+      <style type="text/css" media="screen">
+                    div.button.expandCollapse {
+                        float: left;
+                        margin-right: 10px;
+                        cursor: pointer;
+                    }
+                </style>
+      <!-- Revision Toggle CSS -->
+      <style type="text/css" media="print">
+                    button, 
+                    div.button,
+                    #buttontable {
+                        display: none;
+                    }
+                    div.section-content {
+                        display: block !important;
+                    }
+                    .print_visible {
+                        display: block;
+                        float: none;
+                        margin-right: 0;
+                    }
+                </style>
+      <!-- Table of Contents CSS -->
+      <style type="text/css" media="screen">
+                    #nav, #nav ul {
+                        padding: 0;
+                        margin: 0;
+                        list-style: none;
+                    }
+                    
+                    #nav li {
+                        float: left;
+                        width: 300px;
+                    }
+                    #nav ul {
+                        position: absolute;
+                        width: 300px;
+                        left: -1000px;
+                    }
+                    #nav li ul li ul {
+                        display: none;
+                    }
+                    
+                    #nav li ul li:hover > ul {
+                        display: block;
+                        position: absolute;
+                        left: 50px !important;
+                    }
+                    #nav li ul li:hover > ul > li > a {
+                        border: 1px solid #585858;
+                    }
+                    
+                    #nav li:hover ul, #nav li.ie_does_hover ul {
+                        left: auto;
+                        background-position: 0 0;
+                    }
+                    
+                    #nav * a {
+                        display: block;
+                        padding: 2px 8px;
+                        text-decoration: none;
+                        font-weight: bold;
+                        font-size: 11px;
+                    }
+                    
+                    #nav ul * a {
+                        font-weight: bold;
+                        color: #585858;
+                        background-color: #f2f2f2;
+                        cursor: pointer;
+                    }
+                    
+                    #nav ul ul a:link, #nav ul ul a:visited {
+                        font-weight: normal;
+                        color: #585858;
+                        background-color: #f2f2f2;
+                        cursor: pointer;
+                    }
+                    
+                    #nav * li a:hover, #nav * li a:active,
+                    #nav * li * li a:hover, #nav * li * li a:active {
+                        /*font-weight: normal;*/
+                        color: white;
+                        background-color: #585858;
+                        cursor: pointer;
+                    }
+                    
+                    #nav * li {
+                        border-left: 2px solid white;
+                    }
+                    
+                    #nav * ul li {
+                        border-top: 2px solid white;
+                        border-left: 0;
+                    }
+                    
+                    /* IE only hack */
+                    * html ul li, * html ul ul li{
+                        border-bottom: 2px solid white;
+                    }
+                    
+                    * html ul ul li{
+                        border-top: 0;
+                    }
+                    /* End IE only hack */
+                </style>
+      <!-- Javascript for Revisions switch -->
+      <script type="text/javascript">var gStringCollapse = "Collapse"; var gStringExpand = "Expand";
+                        function expandAllSections() {
+                            var toggleButtons = document.getElementsByClassName("expandCollapse");
+                            if (toggleButtons != null) {
+                                var i = 0;
+                                while (i != toggleButtons.length) {
+                                    expandSection(toggleButtons[i]);
+                                    i++;
+                                }
+                            }
+                            toggle('sectionsToggleExpand');
+                            toggle('sectionsToggleCollapse');
+                        }
+                        function expandSection(sectionTitleButton) {
+                            sectionTitleButton.title = gStringCollapse;
+                            sectionTitleButton.innerText = '▼';
+                            sectionTitleButton.onclick = function (){collapseSection(this);};
+                            var sectionContent = sectionTitleButton.parentElement.parentElement.children[1]
+                            if (sectionContent != null) {
+                                sectionContent.style.display = '';
+                            }
+                        }
+                        function collapseAllSections() {
+                            var toggleButtons = document.getElementsByClassName("expandCollapse");
+                            if (toggleButtons != null) {
+                                var i = 0;
+                                while (i != toggleButtons.length) {
+                                    collapseSection(toggleButtons[i]);
+                                    i++;
+                                }
+                            }
+                            toggle('sectionsToggleExpand');
+                            toggle('sectionsToggleCollapse');
+                        }
+                        function collapseSection(sectionTitleButton) {
+                            sectionTitleButton.title = gStringExpand;
+                            sectionTitleButton.innerText = '▶';
+                            sectionTitleButton.onclick = function (){expandSection(this);};
+                            var sectionContent = sectionTitleButton.parentElement.parentElement.children[1]
+                            if (sectionContent != null) {
+                                sectionContent.style.display = 'none';
+                            }
+                        }
+                        function showReviewMarks() {
+                            var allHTMLTags=document.getElementsByTagName("*");
+                            for (i in allHTMLTags) {
+                                //Get all tags with the specified class name.
+                                if (allHTMLTags[i].className=='revision_insert_final') {
+                                    allHTMLTags[i].className = 'revision_insert';
+                                }
+                                if (allHTMLTags[i].className=='revision_delete_final') {
+                                    allHTMLTags[i].className = 'revision_delete';
+                                }
+                            }
+                            toggle('revisionToggleOn');
+                            toggle('revisionToggleOff');
+                        }
+                        function hideReviewMarks() {
+                            var allHTMLTags=document.getElementsByTagName("*");
+                            for (i in allHTMLTags) {
+                                //Get all tags with the specified class name.
+                                if (allHTMLTags[i].className=='revision_insert') {
+                                    allHTMLTags[i].className = 'revision_insert_final';
+                                }
+                                if (allHTMLTags[i].className=='revision_delete') {
+                                    allHTMLTags[i].className = 'revision_delete_final';
+                                }
+                            }
+                            toggle('revisionToggleOn');
+                            toggle('revisionToggleOff');
+                        }
+                        function toggle(obj) {
+                            var el = document.getElementById(obj);
+                            el.style.display = (el.style.display != 'none' ? 'none' : '' );
+                        }
+                        </script>
+      <!-- Javascript for Table of Contents menu -->
+      <script type="text/javascript">
+                        sfHover = function() {
+                            var sfEls = document.getElementById("nav").getElementsByTagName("li");
+                            for (i in sfEls) {
+                                sfEls[i].onmouseover=function() {
+                                    this.className+=" ie_does_hover";
+                                }
+                                sfEls[i].onmouseout=function() {
+                                    this.className=this.className.replace(new RegExp(" ie_does_hover"), "");
+                                }
+                            }
+                        }
+                        if (window.attachEvent) window.attachEvent("onload", sfHover);
+                    </script>
+   </head>
+   <body>
+      <div id="documentheader">
+         <a id="_toc"> </a>
+         <h1 class="title">Community Health and Hospitals: Health Summary (September 12, 2012, 00AM -0000)</h1>
+         <table class="header_table">
+            <tbody>
+               <tr>
+                  <td class="td_label">Patient</td>
+                  <td>
+                     <span class="span_value">Legal:  Myra JONES</span>
+                     <span style="float: right; margin-left: 1em;">
+                        <span>
+                           <span class="span_label">Date of Birth: </span>
+                           <span class="span_value">May  1, 1947<span title="At document creation time"> (65yr)</span>
+                           </span>
+                        </span>
+                        <span class="span_label">Gender: </span>
+                        <span class="span_value">Female</span>
+                     </span>
+                     <span style="float: right;" class="print_visible">
+                        <span class="span_label">Patient-ID: </span>
+                        <span class="span_value">
+                           <span>1 (NPI)</span>, <span>123-10-5230 (SSN)</span>
+                        </span>
+                     </span>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="td_label">Guardian</td>
+                  <td>
+                     <span class="span_value">Ralph JONES - Grandfather</span>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="td_label">Encounter</td>
+                  <td>
+                     <span class="span_label">ID: </span>
+                     <span class="span_value">
+                        <span>1 (NPI)</span>
+                     </span>, <span class="span_label">Type: </span>
+                     <span class="span_value">Pnuemonia</span>, <span class="span_label">Date/Time: </span>
+                     <span class="span_value">from August  6, 2012 to August  13, 2012</span>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="td_label">Documentation Of</td>
+                  <td>Care provision, <span class="span_value">Pnuemonia</span>, <span class="span_label">Date/Time: </span>
+                     <span class="span_value">from August  6, 2012 to August  13, 2012</span>, <span class="span_label">Performer: </span>
+                     <span class="span_value">Dr. Henry SEVEN</span>, <span class="span_label">Performer: </span>
+                     <span class="span_value">Dr. Henry SEVEN</span>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="td_label">Author</td>
+                  <td>
+                     <span class="span_value">Dr Henry SEVEN</span>, <span class="span_label">Authored On: </span>
+                     <span class="span_value">August  13, 2005, 00AM +0500</span>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         <div id="buttontable">
+            <table border="0" cellpadding="0" cellspacing="0">
+               <tbody>
+                  <tr>
+                     <td style="width: 35%; background-color: white;">
+                        <ul id="nav">
+                           <li style="list-style: none;">
+                              <div class="span_button">Table of Contents ∇</div>
+                              <ul>
+                                 <li>
+                                    <a href="#section_1">ALLERGIES, ADVERSE REACTIONS, ALERTS</a>
+                                 </li>
+                                 <li>
+                                    <a href="#section_2">ENCOUNTERS</a>
+                                 </li>
+                                 <li>
+                                    <a href="#section_3">FAMILY HISTORY</a>
+                                 </li>
+                                 <li>
+                                    <a href="#section_4">IMMUNIZATIONS</a>
+                                 </li>
+                                 <li>
+                                    <a href="#section_5">Medications</a>
+                                 </li>
+                                 <li>
+                                    <a href="#section_6">CARE PLAN</a>
+                                 </li>
+                                 <li>
+                                    <a href="#section_7">HOSPITAL DISCHARGE MEDICATIONS</a>
+                                 </li>
+                                 <li>
+                                    <a href="#section_8">REASON FOR REFERRAL</a>
+                                 </li>
+                                 <li>
+                                    <a href="#section_9">PROBLEMS</a>
+                                 </li>
+                                 <li>
+                                    <a href="#section_10">PROCEDURES</a>
+                                 </li>
+                                 <li>
+                                    <a href="#section_11">FUNCTIONAL STATUS</a>
+                                 </li>
+                                 <li>
+                                    <a href="#section_12">RESULTS</a>
+                                 </li>
+                                 <li>
+                                    <a href="#section_13">SOCIAL HISTORY</a>
+                                 </li>
+                                 <li>
+                                    <a href="#section_14">VITAL SIGNS</a>
+                                 </li>
+                                 <li>
+                                    <a href="#section_15">HOSPITAL DISCHARGE INSTRUCTIONS</a>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </td>
+                     <td style="background-color: white;">
+                        <div id="sectionsToggleExpand"
+                             style="display: none;"
+                             class="span_button"
+                             onclick="expandAllSections();">Expand All</div>
+                        <div id="sectionsToggleCollapse"
+                             class="span_button"
+                             onclick="collapseAllSections();">Collapse All</div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+      <div id="documentbody">
+         <div style="margin-left: 0em;" class="section">
+            <div class="section-title">
+               <div class="button expandCollapse"
+                    onclick="collapseSection(this)"
+                    title="Collapse">▼</div>
+               <h3 id="section_1" title="48765-2">ALLERGIES, ADVERSE REACTIONS, ALERTS</h3>
+            </div>
+            <div class="section-content">
+               <div class="section-body">
+                  <div>
+                     <table class="narr_table"
+                            cellspacing="1"
+                            cellpadding="1"
+                            width="100%"
+                            border="1">
+                        <thead>
+                           <tr class="narr_tr">
+                              <th class="narr_th">Substance</th>
+                              <th class="narr_th">Reaction</th>
+                              <th class="narr_th">Severity</th>
+                              <th class="narr_th">Status</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr class="narr_tr">
+                              <td>
+                                 <span id="Drug2">Codeine</span>
+                              </td>
+                              <td>
+                                 <span id="reaction2">Shortness of Breath</span>
+                              </td>
+                              <td>
+                                 <span id="severity2">Moderate</span>
+                              </td>
+                              <td>Active</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div style="margin-left: 0em;" class="section">
+            <div class="section-title">
+               <div class="button expandCollapse"
+                    onclick="collapseSection(this)"
+                    title="Collapse">▼</div>
+               <h3 id="section_2" title="History of encounters">ENCOUNTERS</h3>
+            </div>
+            <div class="section-content">
+               <div class="section-body">
+                  <div>
+                     <table class="narr_table"
+                            cellspacing="1"
+                            cellpadding="1"
+                            width="100%"
+                            border="1">
+                        <thead>
+                           <tr class="narr_tr">
+                              <th class="narr_th">Encounter</th>
+                              <th class="narr_th">Performer</th>
+                              <th class="narr_th">Location</th>
+                              <th class="narr_th">Date</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr class="narr_tr">
+                              <td>
+                                 <span id="Encounter1"/> Pnuemonia</td>
+                              <td>Dr Henry Seven</td>
+                              <td>Community Health and Hospitals</td>
+                              <td>20120806</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div style="margin-left: 0em;" class="section">
+            <div class="section-title">
+               <div class="button expandCollapse"
+                    onclick="collapseSection(this)"
+                    title="Collapse">▼</div>
+               <h3 id="section_3" title="10157-6">FAMILY HISTORY</h3>
+            </div>
+            <div class="section-content">
+               <div class="section-body">
+                  <div>
+                     <p>Father (deceased)</p>
+                     <table class="narr_table"
+                            cellspacing="1"
+                            cellpadding="1"
+                            width="100%"
+                            border="1">
+                        <thead>
+                           <tr class="narr_tr">
+                              <th class="narr_th">Diagnosis</th>
+                              <th class="narr_th">Age At Onset</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr class="narr_tr">
+                              <td>Myocardial Infarction (cause of death)</td>
+                              <td>57</td>
+                           </tr>
+                           <tr class="narr_tr">
+                              <td>Diabetes</td>
+                              <td>40</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div style="margin-left: 0em;" class="section">
+            <div class="section-title">
+               <div class="button expandCollapse"
+                    onclick="collapseSection(this)"
+                    title="Collapse">▼</div>
+               <h3 id="section_4" title="History of immunizations">IMMUNIZATIONS</h3>
+            </div>
+            <div class="section-content">
+               <div class="section-body">
+                  <div>
+                     <span id="immunSect"/>
+                     <table class="narr_table"
+                            cellspacing="1"
+                            cellpadding="1"
+                            width="100%"
+                            border="1">
+                        <thead>
+                           <tr class="narr_tr">
+                              <th class="narr_th">Vaccine</th>
+                              <th class="narr_th">Date</th>
+                              <th class="narr_th">Status</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr class="narr_tr">
+                              <td>
+                                 <span id="immun2"/>Influenza virus vaccine</td>
+                              <td>May 2012</td>
+                              <td>Completed</td>
+                           </tr>
+                           <tr class="narr_tr">
+                              <td>
+                                 <span id="immun4"/>Tetanus and diphtheria toxoids</td>
+                              <td>April 2012</td>
+                              <td>Completed</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div style="margin-left: 0em;" class="section">
+            <div class="section-title">
+               <div class="button expandCollapse"
+                    onclick="collapseSection(this)"
+                    title="Collapse">▼</div>
+               <h3 id="section_5" title="HISTORY OF MEDICATION USE">Medications</h3>
+            </div>
+            <div class="section-content">
+               <div class="section-body">
+                  <div>
+                     <table class="narr_table"
+                            cellspacing="1"
+                            cellpadding="1"
+                            width="100%"
+                            border="1">
+                        <thead>
+                           <tr class="narr_tr">
+                              <th class="narr_th">Medication</th>
+                              <th class="narr_th">Directions</th>
+                              <th class="narr_th">Start Date</th>
+                              <th class="narr_th">Status</th>
+                              <th class="narr_th">Indications</th>
+                              <th class="narr_th">Fill Instructions</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr class="narr_tr">
+                              <td>
+                                 <span id="Med1">Albuterol 0.09 MG/ACTUAT inhalant powder</span>
+                              </td>
+                              <td>
+                                 <span id="Med1_Ins">Albuterol 0.09 MG/ACTUAT inhalant powder, 2 puffs</span>
+                              </td>
+                              <td>20120806</td>
+                              <td>Active</td>
+                              <td>Pneumonia (233604007 SNOMED CT)</td>
+                              <td>
+                                 <span id="FillIns">Generic Substitition Allowed</span>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div style="margin-left: 0em;" class="section">
+            <div class="section-title">
+               <div class="button expandCollapse"
+                    onclick="collapseSection(this)"
+                    title="Collapse">▼</div>
+               <h3 id="section_6" title="Treatment plan">CARE PLAN</h3>
+            </div>
+            <div class="section-content">
+               <div class="section-body">
+                  <div>
+                     <table class="narr_table"
+                            cellspacing="1"
+                            cellpadding="1"
+                            width="100%"
+                            border="1">
+                        <thead>
+                           <tr class="narr_tr">
+                              <th class="narr_th">Planned Activity</th>
+                              <th class="narr_th">Planned Date</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr class="narr_tr">
+                              <td>Consultation with Dr George Potomac for Asthma</td>
+                              <td>20120820</td>
+                           </tr>
+                           <tr class="narr_tr">
+                              <td>Chest X-ray</td>
+                              <td>20120826</td>
+                           </tr>
+                           <tr class="narr_tr">
+                              <td>Sputum Culture</td>
+                              <td>20120820</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div style="margin-left: 0em;" class="section">
+            <div class="section-title">
+               <div class="button expandCollapse"
+                    onclick="collapseSection(this)"
+                    title="Collapse">▼</div>
+               <h3 id="section_7" title=" HOSPITAL DISCHARGE MEDICATIONS ">HOSPITAL DISCHARGE MEDICATIONS</h3>
+            </div>
+            <div class="section-content">
+               <div class="section-body">
+                  <div>
+                     <table class="narr_table"
+                            cellspacing="1"
+                            cellpadding="1"
+                            width="100%"
+                            border="1">
+                        <thead>
+                           <tr class="narr_tr">
+                              <th class="narr_th">Medication</th>
+                              <th class="narr_th">Directions</th>
+                              <th class="narr_th">Start Date</th>
+                              <th class="narr_th">Status</th>
+                              <th class="narr_th">Indications</th>
+                              <th class="narr_th">Fill Instructions</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr class="narr_tr">
+                              <td>
+                                 <span id="DM">120 ACTUAT Fluticasone propionate 0.11 MG/ACTUAT Metered Dose Inhaler</span>
+                              </td>
+                              <td>
+                                 <span id="DM1">0.11 MG/ACTUAT Metered Dose Once Daily</span>
+                              </td>
+                              <td>20120813</td>
+                              <td>Active</td>
+                              <td>Bronchitis (32398004 SNOMED CT)</td>
+                              <td>
+                                 <span id="FillIns_DM">Generic Substitition Allowed</span>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div style="margin-left: 0em;" class="section">
+            <div class="section-title">
+               <div class="button expandCollapse"
+                    onclick="collapseSection(this)"
+                    title="Collapse">▼</div>
+               <h3 id="section_8" title="REASON FOR REFERRAL">REASON FOR REFERRAL</h3>
+            </div>
+            <div class="section-content">
+               <div class="section-body">
+                  <div>
+                     <p>Follow up with Dr George Potomac for Asthma</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div style="margin-left: 0em;" class="section">
+            <div class="section-title">
+               <div class="button expandCollapse"
+                    onclick="collapseSection(this)"
+                    title="Collapse">▼</div>
+               <h3 id="section_9" title="PROBLEM LIST">PROBLEMS</h3>
+            </div>
+            <div class="section-content">
+               <div class="section-body">
+                  <div>
+                     <span id="problems"/>
+                     <ol>
+                        <li>
+                           <span id="problem1">Pneumonia : Status - Resolved</span>
+                        </li>
+                     </ol>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div style="margin-left: 0em;" class="section">
+            <div class="section-title">
+               <div class="button expandCollapse"
+                    onclick="collapseSection(this)"
+                    title="Collapse">▼</div>
+               <h3 id="section_10" title="HISTORY OF PROCEDURES">PROCEDURES</h3>
+            </div>
+            <div class="section-content">
+               <div class="section-body">
+                  <div>
+                     <table class="narr_table"
+                            cellspacing="1"
+                            cellpadding="1"
+                            width="100%"
+                            border="1">
+                        <thead>
+                           <tr class="narr_tr">
+                              <th class="narr_th">Procedure</th>
+                              <th class="narr_th">Date</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr class="narr_tr">
+                              <td>
+                                 <span id="Proc2">Chest X-Ray</span>
+                              </td>
+                              <td>8/7/2012</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div style="margin-left: 0em;" class="section">
+            <div class="section-title">
+               <div class="button expandCollapse"
+                    onclick="collapseSection(this)"
+                    title="Collapse">▼</div>
+               <h3 id="section_11" title="47420-5">FUNCTIONAL STATUS</h3>
+            </div>
+            <div class="section-content">
+               <div class="section-body">
+                  <div>
+                     <table class="narr_table"
+                            cellspacing="1"
+                            cellpadding="1"
+                            width="100%"
+                            border="1">
+                        <thead>
+                           <tr class="narr_tr">
+                              <th class="narr_th">Functional Condition</th>
+                              <th class="narr_th">Effective Dates</th>
+                              <th class="narr_th">Condition Status</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr class="narr_tr">
+                              <td>
+                                 <span id="fs1">Dependence on cane</span>
+                              </td>
+                              <td>November 1, 2008</td>
+                              <td>Active</td>
+                           </tr>
+                           <tr class="narr_tr">
+                              <td>
+                                 <span id="fs2">Memory impairment</span>
+                              </td>
+                              <td>November 1, 2008</td>
+                              <td>Active</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div style="margin-left: 0em;" class="section">
+            <div class="section-title">
+               <div class="button expandCollapse"
+                    onclick="collapseSection(this)"
+                    title="Collapse">▼</div>
+               <h3 id="section_12" title="RESULTS">RESULTS</h3>
+            </div>
+            <div class="section-content">
+               <div class="section-body">
+                  <div>
+                     <table class="narr_table" cellspacing="1" cellpadding="1">
+                        <thead>
+                           <tr class="narr_tr">
+                              <th class="narr_th">Result Type</th>
+                              <th class="narr_th">Result Value</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr class="narr_tr">
+                              <td id="result1">HGB</td>
+                              <td id="resultvalue1">10.2 g/dL</td>
+                           </tr>
+                           <tr class="narr_tr">
+                              <td id="result2">WBC</td>
+                              <td id="resultvalue2">12.3 10*3/uL</td>
+                           </tr>
+                           <tr class="narr_tr">
+                              <td id="result3">PLT</td>
+                              <td id="resultvalue3">123 10*3/uL</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div style="margin-left: 0em;" class="section">
+            <div class="section-title">
+               <div class="button expandCollapse"
+                    onclick="collapseSection(this)"
+                    title="Collapse">▼</div>
+               <h3 id="section_13" title="Social History">SOCIAL HISTORY</h3>
+            </div>
+            <div class="section-content">
+               <div class="section-body">
+                  <div>
+                     <table class="narr_table"
+                            cellspacing="1"
+                            cellpadding="1"
+                            width="100%"
+                            border="1">
+                        <thead>
+                           <tr class="narr_tr">
+                              <th class="narr_th">Social History Element</th>
+                              <th class="narr_th">Description</th>
+                              <th class="narr_th">Effective Date</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr class="narr_tr">
+                              <td>
+                                 <span id="soc1"/> smoking</td>
+                              <td>Former Smoker (1 pack per day)</td>
+                              <td>20050501 to 20110227</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div style="margin-left: 0em;" class="section">
+            <div class="section-title">
+               <div class="button expandCollapse"
+                    onclick="collapseSection(this)"
+                    title="Collapse">▼</div>
+               <h3 id="section_14" title="VITAL SIGNS">VITAL SIGNS</h3>
+            </div>
+            <div class="section-content">
+               <div class="section-body">
+                  <div>
+                     <table class="narr_table"
+                            cellspacing="1"
+                            cellpadding="1"
+                            width="100%"
+                            border="1">
+                        <thead>
+                           <tr class="narr_tr">
+                              <th class="narr_th" align="right">Date / Time: </th>
+                              <th class="narr_th">Nov 1, 2011</th>
+                              <th class="narr_th">August 6, 2012</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr class="narr_tr">
+                              <th class="narr_th" align="left">Height</th>
+                              <td>
+                                 <span id="vit1">175 cm</span>
+                              </td>
+                              <td>
+                                 <span id="vit2">175 cm</span>
+                              </td>
+                           </tr>
+                           <tr class="narr_tr">
+                              <th class="narr_th" align="left">Weight</th>
+                              <td>
+                                 <span id="vit3">88 kg</span>
+                              </td>
+                              <td>
+                                 <span id="vit4">90 kg</span>
+                              </td>
+                           </tr>
+                           <tr class="narr_tr">
+                              <th class="narr_th" align="left">Blood Pressure</th>
+                              <td>
+                                 <span id="vit5">132/86 mm[Hg]</span>
+                              </td>
+                              <td>
+                                 <span id="vit6">145/88 mm[Hg]</span>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div style="margin-left: 0em;" class="section">
+            <div class="section-title">
+               <div class="button expandCollapse"
+                    onclick="collapseSection(this)"
+                    title="Collapse">▼</div>
+               <h3 id="section_15" title="HOSPITAL DISCHARGE INSTRUCTIONS">HOSPITAL DISCHARGE INSTRUCTIONS</h3>
+            </div>
+            <div class="section-content">
+               <div class="section-body">
+                  <div>
+                     <span>
+                     Ms. Jones, you have been seen by Dr. Henry Seven at Local Community Hospital from August 8th until August 13th 2012. You are currently being discharged from Local Community Hospital. Dr. Seven has provided the following instructions to you at this time; should you have any questions please contact a member of your healthcare team prior to discharge. If you have left the hospital and have questions, please contact Dr. Seven at 555-555-1002. 
+                     Instructions:
+                  </span>
+                     <ol>
+                        <li>Take all medications as prescribed.</li>
+                        <li>Please monitor your peak flows. If your peak flows drop to 50% of normal, call my office immediately or return to the Emergency Room.</li>
+                        <li>If you experience any of the following symptoms, call my office immediately or return to the Emergency Room:
+                        <ol>
+                              <li>Shortness of Breath</li>
+                              <li>Dizziness or Light-headedness</li>
+                              <li>Fever, chills, or diffuse body aches</li>
+                              <li>Pain or redness at the site of any previous intravenous catheter</li>
+                              <li>Any other unusual problem</li>
+                           </ol>
+                        </li>
+                     </ol>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="documentfooter">
+         <table class="header_table">
+            <tbody>
+               <tr>
+                  <td class="td_label td_label_width">Document</td>
+                  <td style="width: 30%;">
+                     <table class="table_simple">
+                        <tbody>
+                           <tr>
+                              <td class="td_label">ID</td>
+                              <td>
+                                 <span>ToC_11 (1.1.1.1.1.1.1.1.1)</span>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </td>
+                  <td class="td_label td_label_width">Created On</td>
+                  <td>September  12, 2012, 00AM -0000</td>
+               </tr>
+            </tbody>
+         </table>
+         <table class="header_table">
+            <tbody>
+               <tr>
+                  <td class="td_label td_label_width">Custodian</td>
+                  <td style="width: 30%;">Community Health and Hospitals</td>
+                  <td class="td_label td_label_width">Contact Details</td>
+                  <td>Workplace: 1002 Healthcare Drive <br/>Portland, OR 97266<br/>US<br/>Tel Workplace:  555-555-1002</td>
+               </tr>
+            </tbody>
+         </table>
+         <div class="separator"> </div>
+         <table class="header_table">
+            <tbody>
+               <tr>
+                  <td class="td_label td_label_width">Patient</td>
+                  <td style="width: 30%;">Legal:  Myra JONES</td>
+                  <td class="td_label td_label_width">Contact Details</td>
+                  <td style="width: 30%;">Home Primary: 1357 Amber Drive<br/>Beaverton, OR 97006<br/>US<br/>Tel Home Primary: (816)276-6909</td>
+               </tr>
+               <tr>
+                  <td class="td_label td_label_width">Date of Birth</td>
+                  <td style="width: 30%;">May  1, 1947 (65yr)</td>
+                  <td class="td_label td_label_width">Gender</td>
+                  <td>Female</td>
+               </tr>
+               <tr>
+                  <td class="td_label td_label_width">Race</td>
+                  <td style="width: 30%;">White</td>
+                  <td class="td_label td_label_width">Ethnicity</td>
+                  <td>Not Hispanic or Latino</td>
+               </tr>
+               <tr>
+                  <td class="td_label td_label_width">Patient-IDs</td>
+                  <td>
+                     <span>1 (NPI)</span>
+                     <br/>
+                     <span>123-10-5230 (SSN)</span>
+                  </td>
+                  <td class="td_label td_label_width">Language Communication</td>
+                  <td colspan="3">
+                     <div>eng, Expressed spoken, preferred: yes</div>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="td_label td_label_width">Guardian</td>
+                  <td style="width: 30%;">Ralph JONES - Grandfather</td>
+                  <td class="td_label td_label_width">Contact Details</td>
+                  <td>Home Primary: 1357 Amber Drive<br/>Beaverton, OR 97006<br/>US<br/>Tel Home Primary: (816)276-6909</td>
+               </tr>
+               <tr>
+                  <td class="td_label td_label_width">Provider Organization</td>
+                  <td style="width: 30%;">
+                     <div>Community Health and Hospitals</div>
+                     <table class="table_simple">
+                        <tbody>
+                           <tr>
+                              <td class="td_label">ID</td>
+                              <td>
+                                 <span>1.1.1.1.1.1.1.1.4</span>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </td>
+                  <td class="td_label td_label_width">Contact Details (Organization)</td>
+                  <td style="width: 30%;">1002 Healthcare Dr<br/>Portland, OR 97266<br/>US<br/>Tel Workplace:  555-555-5000</td>
+               </tr>
+            </tbody>
+         </table>
+         <div class="separator"> </div>
+         <table class="header_table">
+            <tbody>
+               <tr>
+                  <td class="td_label td_label_width">Documentation Of - care provision</td>
+                  <td style="width: 80%;" colspan="3">Pnuemoniafrom August  6, 2012 to August  13, 2012</td>
+               </tr>
+               <tr>
+                  <td class="td_label td_label_width">Performer - Primary Care Provider - Primary Care Provider</td>
+                  <td style="width: 30%;">Dr. Henry SEVEN of Community Health and Hospitals</td>
+                  <td class="td_label td_label_width">Contact Details</td>
+                  <td>1002 Healthcare Dr<br/>Portland, OR 97266<br/>US<br/>Tel Workplace: +1-555-555-5000</td>
+               </tr>
+               <tr>
+                  <td class="td_label td_label_width">Performer - Primary Care Provider - Primary Care Provider</td>
+                  <td style="width: 30%;">Dr. Henry SEVEN of Community Health and Hospitals</td>
+                  <td class="td_label td_label_width">Contact Details</td>
+                  <td>1002 Healthcare Dr<br/>Portland, OR 97266<br/>US<br/>Tel Home Primary: +1-555-555-5000</td>
+               </tr>
+            </tbody>
+         </table>
+         <table class="header_table">
+            <tbody>
+               <tr>
+                  <td class="td_label td_label_width">Encounter</td>
+                  <td style="width: 30%;">
+                     <table class="table_simple">
+                        <tbody>
+                           <tr>
+                              <td class="td_label">ID</td>
+                              <td>
+                                 <span>1 (NPI)</span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td class="td_label">Type</td>
+                              <td>Pnuemonia</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </td>
+                  <td class="td_label td_label_width">Encounter Date</td>
+                  <td>from August  6, 2012 to August  13, 2012</td>
+               </tr>
+               <tr>
+                  <td class="td_label td_label_width">Encounter Location</td>
+                  <td colspan="3">ID:<span>2.16.840.1.113883.4.6</span>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="td_label td_label_width">Responsible Party</td>
+                  <td colspan="3">Dr Henry SEVEN</td>
+               </tr>
+               <tr>
+                  <td class="td_label td_label_width">attender</td>
+                  <td colspan="3">Dr Henry SEVEN</td>
+               </tr>
+            </tbody>
+         </table>
+         <div class="separator"> </div>
+         <table class="header_table">
+            <tbody>
+               <tr>
+                  <td class="td_label td_label_width">Author</td>
+                  <td style="width: 30%;">Dr Henry SEVEN</td>
+                  <td class="td_label td_label_width">Contact Details</td>
+                  <td>1002 Healthcare Drive <br/>Portland, OR 97266<br/>US<br/>Tel Workplace: 555-555-1002</td>
+               </tr>
+            </tbody>
+         </table>
+         <table class="header_table">
+            <tbody>
+               <tr>
+                  <td class="td_label td_label_width">Indirect target - personal relationship Grand Parent</td>
+                  <td style="width: 30%;">Mr. Ralph JONES, Grand Parent</td>
+                  <td class="td_label td_label_width">Contact Details</td>
+                  <td>Home Primary: 1357 Amber Drive<br/>Beaverton, OR 97006<br/>US<br/>Tel Workplace: (555)555-2006</td>
+               </tr>
+            </tbody>
+         </table>
+         <table class="header_table">
+            <tbody>
+               <tr>
+                  <td class="td_label td_label_width">Indirect target - personal relationship SPOUSE</td>
+                  <td style="width: 30%;">Mr. Frank JONES, SPOUSE</td>
+                  <td class="td_label td_label_width">Contact Details</td>
+                  <td>Home Primary: 1357 Amber Drive<br/>Beaverton, OR 97006<br/>US<br/>Tel Workplace: (555)555-2006</td>
+               </tr>
+            </tbody>
+         </table>
+         <table class="header_table">
+            <tbody>
+               <tr>
+                  <td class="td_label td_label_width">Data Enterer</td>
+                  <td style="width: 30%;">Mary MCDONALD</td>
+                  <td class="td_label td_label_width">Contact Details</td>
+                  <td>1002 Healthcare Drive <br/>Portland, OR 97266<br/>US<br/>Tel Workplace: 555-555-1002</td>
+               </tr>
+            </tbody>
+         </table>
+         <table class="header_table">
+            <tbody>
+               <tr>
+                  <td class="td_label td_label_width">Informant</td>
+                  <td style="width: 30%;">Henry SEVEN</td>
+                  <td class="td_label td_label_width">Contact Details</td>
+                  <td>1002 Healthcare Drive <br/>Portland, OR 97266<br/>US<br/>Tel Workplace: 555-555-1002</td>
+               </tr>
+            </tbody>
+         </table>
+         <table class="header_table">
+            <tbody>
+               <tr>
+                  <td class="td_label td_label_width">Informant</td>
+                  <td>Frank JONES</td>
+               </tr>
+            </tbody>
+         </table>
+         <table class="header_table">
+            <tbody>
+               <tr>
+                  <td class="td_label td_label_width">Information Recipient</td>
+                  <td colspan="3">Henry SEVEN</td>
+               </tr>
+               <tr>
+                  <td class="td_label td_label_width">Organization</td>
+                  <td style="width: 30%;">
+                     <div>Community Health and Hospitals</div>
+                  </td>
+                  <td class="td_label td_label_width">Contact Details (Organization)</td>
+                  <td style="width: 30%;"/>
+               </tr>
+            </tbody>
+         </table>
+         <table class="header_table">
+            <tbody>
+               <tr>
+                  <td class="td_label td_label_width">Authenticator</td>
+                  <td style="width: 30%;">Henry SEVEN signed at August  13, 2012</td>
+                  <td class="td_label td_label_width">Contact Details</td>
+                  <td>1002 Healthcare Drive <br/>Portland, OR 97266<br/>US<br/>Tel Workplace: 555-555-1002</td>
+               </tr>
+            </tbody>
+         </table>
+         <table class="header_table">
+            <tbody>
+               <tr>
+                  <td class="td_label td_label_width">Legal Authenticator</td>
+                  <td style="width: 30%;">Henry SEVEN signed at August  13, 2012</td>
+                  <td class="td_label td_label_width">Contact Details</td>
+                  <td>1002 Healthcare Drive <br/>Portland, OR 97266<br/>US<br/>Tel Workplace: 555-555-1002</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </body>
+</html>
