@@ -686,7 +686,7 @@ Allergies, Adverse Reactions, Alerts
                            <td><content
                                  ID="reaction3">Hives</content></td>
                            <td><content
-                                 ID="severity3">Mild to moderate</content></td>
+                                 ID="severity3">Mild</content></td>
                            <td>Active</td>
                         </tr>
                      </tbody>
@@ -852,8 +852,8 @@ Allergies, Adverse Reactions, Alerts
                                     code="completed"/>
                                  <value
                                     xsi:type="CD"
-                                    code="371923003"
-                                    displayName="Mild to moderate"
+                                    code="255604002"
+                                    displayName="Mild"
                                     codeSystem="2.16.840.1.113883.6.96"
                                     codeSystemName="SNOMED CT"/>
                               </observation>
