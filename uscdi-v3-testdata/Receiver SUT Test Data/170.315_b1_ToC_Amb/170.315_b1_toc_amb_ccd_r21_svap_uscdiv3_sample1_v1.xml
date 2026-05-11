@@ -2879,7 +2879,7 @@
 							<id root="1eeb1e51-ee1d-1234-11xy-11z11ddb111z"/>
 							<code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
 							<statusCode code="completed"/>
-							<value xsi:type="CD" code="161901003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Chronically ill"/>
+							<value xsi:type="CD" code="27624003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Chronic disease (disorder)"/>
 						</observation>
 					</entry>
 					<entry>
@@ -3223,12 +3223,13 @@
 									<templateId root="2.16.840.1.113883.10.20.22.4.61"/>
 									<templateId root="2.16.840.1.113883.10.20.22.4.61" extension="2015-08-01" />
 									<id root="2.16.840.1.113883.19" extension="Acme Gold Plan" />
-									<code code="PR"
+									<code code="72" displayName="PPO"
+										codeSystem="2.16.840.1.113883.3.221.5" codeSystemName="Source of Payment Typology (PHDSC)">
+										<translation code="PR"
 									codeSystemName="Insurance Type Code"
-									codeSystem="2.16.840.1.113883.6.255.1336">
-										<translation code="72" displayName="PPO"
-										codeSystem="2.16.840.1.113883.3.221.5" codeSystemName="Source of Payment Typology (PHDSC)"></translation>
+									codeSystem="2.16.840.1.113883.6.255.1336"></translation>
 									</code>
+								
 									<statusCode code="completed" />
 									<!-- Payer -->
 									<performer typeCode="PRF">
